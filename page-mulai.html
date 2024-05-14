@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>Steganography | LSB</title>
+    <!--<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+      integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+      crossorigin="anonymous"
+    />-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Button Back -->
+    <div class="btn-back">
+      <a href="index.html" class="btn-back-link" id="backButton">x</a>
+    </div>
+    <div class="container">
+      <!-- Nav -->
+      <div class="row">
+        <div class="col-7 nav nav-embed active">
+          <button type="button" class="btn-embed active-button">EMBED</button>
+        </div>
+        <div class="col-7 nav nav-extract">
+          <button type="button" class="btn-extract">EXTRACT</button>
+        </div>
+        <div class="col-7 nav nav-test">
+          <button type="button" class="btn-test">PSNR TEST</button>
+        </div>
+      </div>
+      <!-- end Nav -->
+
+      <!-- Content -->
+      <div class="content"></div>
+      <!-- end Content -->
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+      integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/cryptostego.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/cryptostego.min.js"></script>
+    <script src="js/bigInteger.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var backButton = document.getElementById("backButton");
+
+        backButton.addEventListener("click", function () {
+          window.location.href = "index.html"; // Ganti dengan URL halaman tujuan Anda
+        });
+      });
+    </script>
+  </body>
+</html>
